@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="index.css">
+        <title>Choose your Pokémon</title>
+    </head>
+    <body>
+        <header>
+    
+        </header>
+        <main> 
+            <div id="choose-pokemon" class="container">
+                <div class="title-div">POKÉDEX</div>
+                <div class="inner-container">
+                    <h1>Hi, <span id="trainerName-span" class="add-color"></span>!</h1>
+                    <h3>Every journey begins with a choice.</h3>
+                    <p>Choose your Pokémon!</p>
+                    <div id="pokemon-radios" class="pokemon-radios">
+                    </div>
+                    <div>
+                        <div id="sprite-checkbox" class="sprite-checkbox">
+                            <label for="show-sprite">Show Moving Sprite</label>
+                            <input type="checkbox" id="show-sprite">
+                        </div>
+                        
+                    </div>
+                    <button id="choose-btn" class="start-btn">Choose Pokemon</button>
+                </div>
+            </div>
+        </main>
+            <div id="register-modal" class="modal">
+                <div class="title-div">POKÉDEX</div>
+                <div id="modal-inner" class="modal-inner">
+                    <div id="register-form-text" class="register-form-text">
+                        <h2>Welcome Trainer!</h2>
+                        <p>Before we begin, can you tell me your name?</p>
+                    </div>
+                    <form id="register-form">
+                        <label for="trainerName"></label>
+                        <input type="text" id="trainerName" name="trainerName" placeholder="Enter your name here" required>
+                        <button type="submit" id="start-btn" class="start-btn">Start Journey</button>
+                    </form>
+                </div>
+            </div>
+            <div id="pokemon-reveal-modal" class="pokemon-reveal-modal">
+                <div class="title-div">
+                    <p>POKÉDEX</p>
+                    <button class="pokemon-close-btn" id="pokemon-close-btn">X</button>
+                </div>
+                
+                <div id="pokemon-modal-inner" class="pokemon-modal-inner">
+                </div>
+            </div>
+        <footer>
+            <p id="footer-note">Design by Lizzy Cruz. Pokémon data & sprites from <a href="https://bulbapedia.bulbagarden.net/" target="_blank">Bulbapedia</a>
+                © Nintendo/Game Freak/TPC. 8-bit Pokéball by <a href="https://www.deviantart.com/nathanmarino/art/8-Bit-Pokeball-281821614" target="_blank">NathanMarino</a>. Font: Power Red and Blue via <a href="https://eng.m.fontke.com/font/157351864/download/" target="_blank">Fontke</a></p>
+        </footer>
+        <script src="index.js" type="module"></script>
+    </body>
+</html>
